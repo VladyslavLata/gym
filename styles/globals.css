@@ -10,10 +10,6 @@ body {
   font-family:  Roboto, Helvetica Neue, Fira Sans, Oxygen,Droid Sans, -apple-system, BlinkMacSystemFont, Segoe UI,  
     Ubuntu, Cantarell,   sans-serif;
     font-weight: 400;
-
-    @media screen and (max-width: 767px) {
-    position: relative;      
-    }
 }
 
 

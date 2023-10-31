@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { MobileBtn } from "../MobileBtn/MobileBtn";
+import Cl from "../../../public/close.svg";
 import styles from "./NavBar.module.css";
 
 export const NavBar = () => {
@@ -13,9 +15,10 @@ export const NavBar = () => {
         Good<span className={styles.logoAccent}>lyfe</span>
       </Link>
       <div className={styles.linkListWrapp}>
+        <MobileBtn svg={Cl} />
         <ul className={styles.navList}>
           {navData.map(({ title, path }) => (
-            <li key={title}>
+            <li key={title} className={styles.linkWrapp}>
               <Link href={path} className={styles.link}>
                 {title}
               </Link>
