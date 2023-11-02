@@ -30,7 +30,16 @@ export const NavBar = () => {
           <ul className={styles.navList}>
             {navData.map(({ title, path }) => (
               <li key={title} className={styles.linkWrapp}>
-                <Link href={path} className={styles.link}>
+                <Link
+                  href={path}
+                  className={styles.link}
+                  onClick={() => {
+                    if (!showMobileMenu) {
+                      return;
+                    }
+                    togleShowMobileMenu(false);
+                  }}
+                >
                   {title}
                 </Link>
               </li>
