@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useMediaQuery } from "react-responsive";
 
 import { BtnIcon } from "../BtnIcon/BtnIcon";
 import CloseIcon from "../../../public/close.svg";
@@ -8,11 +10,43 @@ import styles from "./NavBar.module.css";
 
 export const NavBar = () => {
   const [showMobileMenu, setshowMobileMenu] = useState(false);
+  const { pathname } = useRouter();
 
   const navData = [
     { title: "Home", path: "/" },
     { title: "About us", path: "/about" },
   ];
+
+  useEffect(() => {
+    const body = document.body;
+    let addStyleBody = null;
+    const togleBodyStyles = () => {
+      if (showMobileMenu) {
+        body.style.overflow = "hidden";
+        addStyleBody = setTimeout(() => {
+          body.style.visibility = "hidden";
+        }, 500);
+      } else {
+        body.style.visibility = "visible";
+        body.style.overflow = "visible";
+      }
+    };
+    togleBodyStyles();
+    return () => {
+      clearTimeout(addStyleBody);
+    };
+  }, [showMobileMenu]);
+
+  const handleMediaQueryChange = (matches) => {
+    if (matches) {
+      if (!showMobileMenu) {
+        return;
+      }
+      setshowMobileMenu(false);
+    }
+  };
+
+  useMediaQuery({ minWidth: 768 }, undefined, handleMediaQueryChange);
 
   const togleShowMobileMenu = (showed) => setshowMobileMenu(showed);
 
@@ -32,7 +66,11 @@ export const NavBar = () => {
               <li key={title} className={styles.linkWrapp}>
                 <Link
                   href={path}
-                  className={styles.link}
+                  className={
+                    pathname === path
+                      ? `${styles.link} ${styles.active}`
+                      : styles.link
+                  }
                   onClick={() => {
                     if (!showMobileMenu) {
                       return;

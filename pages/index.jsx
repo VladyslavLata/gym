@@ -5,7 +5,8 @@ const Home = () => (
     <Head>
       <title>Home</title>
     </Head>
-    <p>asdasdfa</p>
+    <p style={{ marginBottom: "2000px" }}>Home</p>
+    <p>END</p>
   </div>
 );
 
