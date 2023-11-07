@@ -21,14 +21,15 @@ export const NavBar = () => {
     const body = document.body;
     let addStyleBody = null;
     const togleBodyStyles = () => {
+      const bodyStyle = body.style;
       if (showMobileMenu) {
-        body.style.overflow = "hidden";
+        bodyStyle.overflow = "hidden";
         addStyleBody = setTimeout(() => {
-          body.style.visibility = "hidden";
+          bodyStyle.visibility = "hidden";
         }, 500);
       } else {
-        body.style.visibility = "visible";
-        body.style.overflow = "visible";
+        bodyStyle.visibility = "visible";
+        bodyStyle.overflow = "visible";
       }
     };
     togleBodyStyles();
