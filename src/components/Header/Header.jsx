@@ -1,5 +1,5 @@
 import { NavBar } from "../NavBar/NavBar";
-import { Container } from "../Container/COntainer";
+import { Container } from "../Container/Container";
 import { BtnIcon } from "../BtnIcon/BtnIcon";
 // import MenuIcon from "../../../public/burgerMenu.svg";
 import styles from "./Header.module.css";

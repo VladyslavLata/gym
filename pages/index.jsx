@@ -1,13 +1,16 @@
 import Head from "next/head";
 
+import { Hero } from "../src/components/Hero/Hero";
+
 const Home = () => (
-  <div>
+  <>
     <Head>
       <title>Home</title>
+      <meta name="description" content="main page of the gym website" />
+      {/* <link rel="icon" href="/favicon.ico" /> */}
     </Head>
-    <p style={{ marginBottom: "2000px" }}>Home</p>
-    <p>END</p>
-  </div>
+    <Hero />
+  </>
 );
 
 export default Home;
