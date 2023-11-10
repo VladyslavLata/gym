@@ -51,7 +51,7 @@ svg {
   display: block;
 }
 
-
+/* 
 body .carousel .control-dots {
   bottom: 0px;
   left: 50%;
@@ -64,9 +64,9 @@ body .carousel .control-dots {
   margin: 0;
   padding: 10px;
   background-color: transparent;
-}
+} */
 
 
-body .slide:nth-child(3n+2) img {
+/* body .slide:nth-child(3n+2) img {
   object-position: 50% 0;
-}
+} */
