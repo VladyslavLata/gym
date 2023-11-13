@@ -35,6 +35,7 @@
   transform: translateX(103%);  
   visibility: hidden ;
   transition: transform linear 500ms, visibility linear 0ms 500ms;
+  z-index: 999;
   }
 
   @media screen and (min-width: 768px) {
