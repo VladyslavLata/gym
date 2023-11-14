@@ -1,0 +1,27 @@
+.title {
+font-size: 40px;
+line-height: 1.2;
+color:#E43071;
+}
+
+.titleAccentFirst {
+  font-size: 60px;
+  color: #ffffff;
+  text-shadow: 0px 0px 60px rgba(0, 0, 0, 0.46);
+}
+
+.titleAccentSeccond {
+  color: #ffffff;
+}
+
+.titleSeccond {
+font-size: 38px;
+font-weight: 600;
+}
+
+.titleThird {
+  font-size: 48;
+  font-weight: 600;
+  color: #424242;
+}
+
