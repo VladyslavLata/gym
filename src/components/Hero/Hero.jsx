@@ -16,7 +16,7 @@ const images = [
 
 export const Hero = () => {
   return (
-    <section style={{ position: "relative" }}>
+    <section className={styles.heroSection}>
       <CarouselGymImg dataImg={images} />
       <Container currentContainer="heroContainer">
         <div className={styles.contentWrapp}>

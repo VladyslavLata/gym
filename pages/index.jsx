@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import { Hero } from "../src/components/Hero/Hero";
+import { SectionNewBody } from "../src/components/SectionNewBody/SectionNewBody";
 
 const Home = () => (
   <>
@@ -10,6 +11,7 @@ const Home = () => (
       {/* <link rel="icon" href="/favicon.ico" /> */}
     </Head>
     <Hero />
+    <SectionNewBody />
   </>
 );
 
