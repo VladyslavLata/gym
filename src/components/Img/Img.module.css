@@ -1,0 +1,36 @@
+.wrappImg {
+  position: absolute;
+}
+
+.wrappImgFirstHidden {
+  top: 0;
+  left: 0;
+  width: 175px;
+  height: 250px;
+  transform: translate(-100%, -100%);
+
+  @media screen and (min-width: 1440px) {
+    width: 350px;
+    height: 400px;
+  }
+}
+
+.wrappImgSecondHidden {
+  top: 95px;
+  left: 115px;
+  width: 145px;
+  height: 220px;
+  transform: translate(100%, 100%);
+
+  @media screen and (min-width: 1440px) {
+    top: 145px;
+    left: 200px;
+    width: 240px;
+    height: 360px;
+  }
+}
+
+.wrappImgVisible {
+  transform: translate(0, 0);
+  transition: transform 1000ms cubic-bezier(0.09, 0.8, 0.67, 0.99);
+}
