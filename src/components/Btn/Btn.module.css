@@ -6,11 +6,11 @@
   border-radius: 38px;
   cursor: pointer;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     width: 100%;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     min-width: 240px;
   }
 }

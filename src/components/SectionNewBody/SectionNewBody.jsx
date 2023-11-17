@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { Container } from "../Container/Container";
 import { Img } from "../Img/Img";
 import { Title } from "../Title/Title";
+import { Btn } from "../Btn/Btn";
 import { useObserver } from "../../hooks/useObserver";
 
 import maleLiftingWeights from "../../../public/male-lifting-weights.jpg";
@@ -36,21 +37,13 @@ export const SectionNewBody = () => {
           </div>
           <div className={styles.wrappText}>
             <Title text="Meet your new body" />
-            <p>
-              asdasd Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Eius nobis consequuntur consectetur quo itaque voluptas aliquam
-              magni harum ipsam, natus sed asperiores nam praesentium ut
-              similique, ad est iusto nihil excepturi, saepe illo! Magni
-              perspiciatis tempora nostrum perferendis, a ut nisi exercitationem
-              quis? Quas impedit ad eos, possimus, nemo sequi ipsam eveniet esse
-              ducimus nam quae minus repudiandae, doloremque provident eius
-              sapiente natus excepturi. Harum ullam maxime veniam, eligendi
-              deserunt autem similique quasi modi architecto est quod sit
-              perspiciatis error sint molestiae? Accusantium ipsam sed rem, quis
-              molestiae corporis! Repudiandae, placeat odit. Recusandae
-              consectetur tempora consequuntur! Aspernatur temporibus explicabo
-              iusto.
+            <p className={styles.text}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              eget lectus urna. Nulla magna tortor, bibendum in molestie sed,
+              gravida nec felis. Sed id egestasegestas risus, ut imperdiet
+              augue.
             </p>
+            <Btn text="View the FAQ" />
           </div>
         </div>
       </Container>
