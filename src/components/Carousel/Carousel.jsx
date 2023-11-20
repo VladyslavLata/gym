@@ -73,13 +73,7 @@ export const CarouselGymImg = ({ dataImg }) => {
     <Slider {...settings}>
       {dataImg.map(({ img, alt }) => (
         <div key={alt} className={styles.imgWrapp}>
-          <Image
-            src={img}
-            fill
-            // width={"100%"}
-            // height={"100%"}
-            alt={alt}
-          />
+          <Image src={img} fill alt={alt} />
         </div>
       ))}
     </Slider>
