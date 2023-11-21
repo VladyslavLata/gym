@@ -1,0 +1,65 @@
+import Image from "next/image";
+
+import { Container } from "../Container/Container";
+import styles from "./SectionStories.module.css";
+
+import james from "../../../public/portrait-james.jpg";
+import robert from "../../../public/portrait-robert.jpg";
+import mary from "../../../public/portrait-mary.jpg";
+
+const persons = [
+  {
+    url: james,
+    name: "James John",
+    lostKg: 3,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risu.",
+  },
+  {
+    url: mary,
+    name: "Mary Patricia",
+    lostKg: 17,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in mo.",
+  },
+  {
+    url: robert,
+    name: "Robert Micheal",
+    lostKg: 43,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+];
+
+export const SectionStories = () => {
+  return (
+    <section className={styles.section}>
+      {/* <Container currentContainer="stories"> */}
+      <div>
+        <h2 className={styles.title}>
+          Real Stories from <br /> Real Customers
+        </h2>
+        <p className={styles.text}>Be inspired with these experiences.</p>
+        <ul className={styles.list}>
+          {persons.map(({ url, name, lostKg, text }) => {
+            return (
+              <li key={name} className={styles.item}>
+                <div className={styles.storyWrapp}>
+                  <p>{`${lostKg}Kg lost!`}</p>
+                  <div>
+                    <p>&#10077;</p>
+                    <p className={styles.story}>{text}</p>
+                  </div>
+                </div>
+                <div className={styles.personInfo}>
+                  <div>
+                    <Image src={url} alt={`Portrait of ${name}`} fill />
+                  </div>
+                  <h3>{name}</h3>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+      {/* </Container> */}
+    </section>
+  );
+};
