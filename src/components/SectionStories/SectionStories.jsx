@@ -3,9 +3,9 @@ import Image from "next/image";
 import { Container } from "../Container/Container";
 import styles from "./SectionStories.module.css";
 
-import james from "../../../public/portrait-james.jpg";
-import robert from "../../../public/portrait-robert.jpg";
-import mary from "../../../public/portrait-mary.jpg";
+import james from "../../../public/james.webp";
+import robert from "../../../public/robert.webp";
+import mary from "../../../public/mary.webp";
 
 const persons = [
   {
@@ -32,27 +32,29 @@ export const SectionStories = () => {
   return (
     <section className={styles.section}>
       {/* <Container currentContainer="stories"> */}
-      <div>
-        <h2 className={styles.title}>
-          Real Stories from <br /> Real Customers
-        </h2>
-        <p className={styles.text}>Be inspired with these experiences.</p>
+      <div className={styles.storiesContainer}>
+        <div className={styles.titleWrapp}>
+          <h2 className={styles.title}>
+            Real Stories from <br /> Real Customers
+          </h2>
+          <p className={styles.text}>Be inspired with these experiences.</p>
+        </div>
         <ul className={styles.list}>
           {persons.map(({ url, name, lostKg, text }) => {
             return (
               <li key={name} className={styles.item}>
                 <div className={styles.storyWrapp}>
-                  <p>{`${lostKg}Kg lost!`}</p>
-                  <div>
-                    <p>&#10077;</p>
+                  <p className={styles.lost}>{`${lostKg}Kg lost!`}</p>
+                  <div className={styles.storyTextWrapp}>
+                    <p className={styles.symbol}>&#10077;</p>
                     <p className={styles.story}>{text}</p>
                   </div>
                 </div>
                 <div className={styles.personInfo}>
-                  <div>
+                  <div className={styles.imgWrapp}>
                     <Image src={url} alt={`Portrait of ${name}`} fill />
                   </div>
-                  <h3>{name}</h3>
+                  <h3 className={styles.personName}>{name}</h3>
                 </div>
               </li>
             );
