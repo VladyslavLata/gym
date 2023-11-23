@@ -5,6 +5,8 @@ import { SectionNewBody } from "../src/components/SectionNewBody/SectionNewBody"
 import { SectionBecomeMore } from "../src/components/SectionBecomeMore/SectionBecomeMore";
 import { SectionPremiumFacilities } from "../src/components/SectionPremiumFacilities/SectionPremiumFacilities";
 import { SectionStories } from "../src/components/SectionStories/SectionStories";
+import { SectionOurApp } from "../src/components/SectionOurApp/SectionOurApp";
+import { Social } from "../src/components/Social/Social";
 
 const Home = () => (
   <>
@@ -18,6 +20,8 @@ const Home = () => (
     <SectionBecomeMore />
     <SectionPremiumFacilities />
     <SectionStories />
+    <SectionOurApp />
+    <Social />
   </>
 );
 

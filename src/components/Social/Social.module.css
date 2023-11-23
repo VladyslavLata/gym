@@ -1,0 +1,6 @@
+.section {
+  position: relative;
+  height: 200px;
+  background-color: aquamarine;
+z-index: -1;
+}

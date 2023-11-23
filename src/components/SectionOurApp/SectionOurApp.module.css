@@ -1,0 +1,63 @@
+.section {
+  padding: 50px 0 470px;
+  background-color: #e43071;
+}
+
+.wrappContent{
+ /* position: relative; */
+}
+
+.text {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 2;
+  color: #fff;
+}
+
+.downloodText {
+  margin: 30px 0 10px;
+  font-size: 16px;
+  line-height: 1.1;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dawnLoodList {
+  display: flex;
+  gap: 20px;
+}
+
+.downloodItem {
+  display: inline-block;
+}
+
+.imagesWrapp {
+  position: relative;
+}
+
+.appMobileList {
+  position: absolute;  
+  bottom: -550px;
+  left: 0;
+  display: flex;  
+  width: 100%;
+  min-height: 500px;
+  padding: 0 0px 0px 15px;
+  overflow: hidden;
+  gap: 25px;
+}
+
+.phoneImgWrapp {
+  position: relative;
+  display: inline-block;
+  min-width: 165px;
+  height: 330px;
+  border-radius: 27px;
+  overflow: hidden;
+  box-shadow: 10px 15px 30px 0px rgba(41, 41, 42, 0.50);
+}
+
+.phoneImgWrapp:not(:first-child) {
+  top:120px;
+padding-bottom: 40px;
+
+}
