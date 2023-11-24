@@ -1,10 +1,24 @@
 .section {
   padding: 50px 0 470px;
   background-color: #e43071;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 0 70px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 110px 20px 80px 90px;
+  }
 }
 
-.wrappContent{
- /* position: relative; */
+.wrappContent {
+  @media screen and (min-width: 768px) {
+    width: 420px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 490px;
+  }
 }
 
 .text {
@@ -32,18 +46,57 @@
 
 .imagesWrapp {
   position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+  }
 }
 
 .appMobileList {
-  position: absolute;  
-  bottom: -550px;
-  left: 0;
-  display: flex;  
+  position: absolute;
+  display: flex;
   width: 100%;
-  min-height: 500px;
-  padding: 0 0px 0px 15px;
+  min-height: 515px;
+  padding: 15px 15px 0;
   overflow: hidden;
   gap: 25px;
+
+  @media screen and (max-width: 767px) {
+    left: 0;
+    bottom: -540px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: -420px;
+    right: -110px;
+    width: 420px;
+    padding: 15px 20px 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: auto;
+    right: 180px;
+    bottom: -80px;
+    width: 570px;
+    padding: 15px 20px 0;
+    gap: 35px;
+    min-height: 510px;
+  }
 }
 
 .phoneImgWrapp {
@@ -53,11 +106,21 @@
   height: 330px;
   border-radius: 27px;
   overflow: hidden;
-  box-shadow: 10px 15px 30px 0px rgba(41, 41, 42, 0.50);
+  background-color: rgba(41, 41, 42, 0.5);
+  box-shadow: 10px 15px 30px 0px rgba(41, 41, 42, 0.5);
+
+  @media screen and (min-width: 1440px) {
+    min-width: 230px;
+    height: 460px;
+    border-radius: 35px;
+  }
 }
 
 .phoneImgWrapp:not(:first-child) {
-  top:120px;
-padding-bottom: 40px;
+  top: 120px;
+  padding-bottom: 40px;
 
+  @media screen and (min-width: 1440px) {
+    top: 135px;
+  }
 }
