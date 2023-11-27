@@ -1,5 +1,25 @@
 .footer {
+  padding: 40px 0 30px;
+font-family: var(--font-manrope);
+background-color: #0B0D17;
+color: #D9DBE1;
 
-  height: 800px;
+}
 
+.logo {
+  color: #ffffff;
+  font-family: var(--font-poppins);
+  font-size: 26px;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.logoAccent {
+  color: #E43071;
+}
+
+.text {
+  margin: 25px 0;
+  font-size: 14px;
+  line-height: 1.7;
 }

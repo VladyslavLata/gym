@@ -1,15 +1,16 @@
 import styles from "./LinckBtn.module.css";
 
-export const LinckBtn = ({ key, href, icon: Icon, currentLinck }) => {
+export const LinckBtn = ({ href, icon: Icon, currentLink }) => {
   return (
-    <li key={key} className={styles[`${currentLinck}LinckWrapp`]}>
+    <li className={styles[`${currentLink}LinkWrapp`]}>
       <a
         href={href}
-        className={styles[`${currentLinck}Linck`]}
+        className={styles[`${currentLink}Link`]}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={(e) => e.currentTarget.blur()}
       >
-        <div className={styles[`${currentLinck}IconWrapp`]}>
+        <div className={styles[`${currentLink}IconWrapp`]}>
           <Icon alt="icon" width="100%" height="100%" fill="currentcolor" />
         </div>
       </a>

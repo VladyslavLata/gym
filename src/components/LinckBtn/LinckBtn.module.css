@@ -1,11 +1,49 @@
-.mainLinckWrapp {
+.mainLinkWrapp {
+width: 75px;
+height: 75px;
+border-radius: 50%;
+border: 2px solid transparent;
+overflow: hidden;
+background-color: #ffffff;
+color: #E43071;
+transition: background-color 250ms linear, color 250ms linear;
 
+@media screen and (min-width:768px) {
+  width: 110px;
+    height: 110px;
+  
+}
 }
 
-.mainLinck {
+.mainLinkWrapp:hover, .mainLinkWrapp:focus-within {
+  background-color: #E43071;
+  color: #ffffff;
+}
 
+.mainLinkWrapp:focus-within {
+  border: 2px solid black;
+}
+
+.mainLink {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+cursor: pointer;
+}
+
+.mainLink:active .mainLinkWrapp {
+border: 2px solid transparent;
 }
 
 .mainIconWrapp {
+  width: 20px;
+  height: 20px;
+
+  @media screen and (min-width:768px) {
+      width: 30px;
+      height: 30px;
   
+    }
 }
