@@ -1,9 +1,8 @@
 .footer {
   padding: 40px 0 30px;
-font-family: var(--font-manrope);
-background-color: #0B0D17;
-color: #D9DBE1;
-
+  font-family: var(--font-manrope);
+  background-color: #0b0d17;
+  color: #d9dbe1;
 }
 
 .logo {
@@ -15,11 +14,42 @@ color: #D9DBE1;
 }
 
 .logoAccent {
-  color: #E43071;
+  color: #e43071;
 }
 
 .text {
   margin: 25px 0;
   font-size: 14px;
   line-height: 1.7;
+}
+
+.socialList {
+  display: flex;
+  gap: 15px;
+}
+
+.reachWrapp {
+  margin: 40px 0;
+}
+
+.reach {
+  margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+color: #ffffff;
+}
+
+.addressItem:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.addressIconWrapp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.addressText {
+  width: 200px;
 }

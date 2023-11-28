@@ -5,7 +5,7 @@ export const LinckBtn = ({ href, icon: Icon, currentLink }) => {
     <li className={styles[`${currentLink}LinkWrapp`]}>
       <a
         href={href}
-        className={styles[`${currentLink}Link`]}
+        className={styles.link}
         target="_blank"
         rel="noopener noreferrer"
         onClick={(e) => e.currentTarget.blur()}
