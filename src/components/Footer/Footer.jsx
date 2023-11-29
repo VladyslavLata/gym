@@ -11,8 +11,6 @@ import inst from "../../../public/instagram.svg";
 import emailIcon from "../../../public/message.svg";
 import phoneIcon from "../../../public/calling.svg";
 import locationIcon from "../../../public/location.svg";
-// import disclaimer from "../../../public/Disclaimer.docx";
-// import privacy from "../../../public/privacy-policy-template.pdf";
 
 import { manrope, poppins } from "../../fonts/fonts";
 import styles from "./Footer.module.css";
@@ -45,11 +43,21 @@ const address = [
   },
 ];
 
+const downloadFiles = [
+  {
+    name: "Privacy Policy",
+    file: "/privacy.pdf",
+  },
+  {
+    name: "Disclaimer",
+    file: "/disclaimer.docx",
+  },
+];
 export const Footer = () => {
   return (
     <footer className={`${manrope.variable} ${styles.footer}`}>
       <Container>
-        <div>
+        <div className={styles.mainContentWrapp}>
           <div>
             <Link href="/" className={`${poppins.variable} ${styles.logo}`}>
               Good<span className={styles.logoAccent}>lyfe</span>
@@ -88,25 +96,26 @@ export const Footer = () => {
             </address>
           </div>
         </div>
-        <div>
-          <ul>
-            <li>
-              <a href="/public/privacy-policy-template.pdf" download>
-                GGGG
-              </a>
-            </li>
-            <li>
-              <a></a>
-            </li>
+        <div className={styles.downloadWrapp}>
+          <ul className={styles.downloadList}>
+            {downloadFiles.map(({ name, file }) => (
+              <li key={name} className={styles.downloadItem}>
+                <Link
+                  href={file}
+                  download={name}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {name}
+                </Link>
+              </li>
+            ))}
           </ul>
-          <p></p>
+          <p className={styles.copyringSign}>
+            &#169; 2020 GoodLyfe. All rights reserved
+          </p>
         </div>
       </Container>
     </footer>
   );
 };
-
-// ("ChIJ7xfS-zW8woARXNkAJzX5Hs8"); 34.06954688539107,
-//   -118.40340728601463(
-//     "https://www.google.com/maps/search/?api=1&query=34.06954688539107%2C-118.40340728601463&query_place_id=ChIJ7xfS-zW8woARXNkAJzX5Hs8"
-//   );
