@@ -11,27 +11,37 @@ import femaleDoingSitups from "../../../public/female-doing-situps.jpg";
 import styles from "./SectionNewBody.module.css";
 
 const Images = [
-  { url: maleLiftingWeights, num: "First", alt: "male lifting weights" },
-  { url: femaleDoingSitups, num: "Second", alt: "female doing situps" },
+  {
+    url: maleLiftingWeights,
+    num: "First",
+    alt: "male lifting weights",
+    sizes: "(max-width: 1439px) 175px, 350px",
+  },
+  {
+    url: femaleDoingSitups,
+    num: "Second",
+    alt: "female doing situps",
+    sizes: "(max-width: 1439px) 145px, 240px",
+  },
 ];
 
 export const SectionNewBody = () => {
   const elementRef = useRef(null);
   const { isIntersecting } = useObserver(0, elementRef);
-  console.log(isIntersecting);
 
   return (
     <section ref={elementRef} className={styles.section}>
       <Container>
         <div className={styles.wrappContent}>
           <div className={styles.wrappImages}>
-            {Images.map(({ url, num, alt }) => (
+            {Images.map(({ url, num, alt, sizes }) => (
               <Img
                 key={alt}
                 url={url}
                 num={num}
                 alt={alt}
                 isVisibile={isIntersecting}
+                sizes={sizes}
               />
             ))}
           </div>

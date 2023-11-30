@@ -54,6 +54,7 @@ export const SectionOurApp = () => {
                 src={img.src}
                 alt="image of a gym app on your phone"
                 fill
+                sizes="(max-width: 1439px) 165px, 230px"
               />
             </li>
           ))}

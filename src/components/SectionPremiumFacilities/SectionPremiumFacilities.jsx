@@ -12,8 +12,18 @@ import weights from "../../../public/weights.jpg";
 import styles from "./SectionPremiumFacilities.module.css";
 
 const Images = [
-  { url: gymRoom, num: "Third", alt: "gym room" },
-  { url: weights, num: "Fourth", alt: "weights" },
+  {
+    url: gymRoom,
+    num: "Third",
+    alt: "gym room",
+    sizes: "(max-width: 1439px) 200px, 445px",
+  },
+  {
+    url: weights,
+    num: "Fourth",
+    alt: "weights",
+    sizes: "(max-width: 1439px) 190px, 420px",
+  },
 ];
 
 export const SectionPremiumFacilities = () => {
@@ -25,13 +35,14 @@ export const SectionPremiumFacilities = () => {
       <Container>
         <div className={styles.wrappContent}>
           <div className={styles.wrappImages}>
-            {Images.map(({ url, num, alt }) => (
+            {Images.map(({ url, num, alt, sizes }) => (
               <Img
                 key={alt}
                 url={url}
                 num={num}
                 alt={alt}
                 isVisibile={isIntersecting}
+                sizes={sizes}
               />
             ))}
           </div>

@@ -11,11 +11,10 @@ export const SectionBecomeMore = () => {
     <section className={styles.section}>
       <div className={styles.wrappImg}>
         <Image
+          className={styles.img}
           src={gymBG}
           fill
           alt="a man doing pull-ups on the horizontal bar"
-          objectFit="cover"
-          objectPosition="top"
         />
       </div>
       <Container currentContainer="becomeMoreContainer">

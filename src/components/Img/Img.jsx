@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import styles from "./Img.module.css";
 
-export const Img = ({ url, alt, num, isVisibile }) => {
+export const Img = ({ url, alt, num, sizes, isVisibile }) => {
   // const createClass = (numImg, isVisibileImg) => {
   //   switch (numImg) {
   //     case 1:
@@ -27,7 +27,7 @@ export const Img = ({ url, alt, num, isVisibile }) => {
           : `${styles[`wrappImg${num}Hidden`]}`
       }`}
     >
-      <Image src={url} fill alt={alt} />
+      <Image src={url} fill alt={alt} sizes={sizes} />
     </div>
   );
 };

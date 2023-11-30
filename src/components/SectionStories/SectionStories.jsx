@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-import { Container } from "../Container/Container";
 import styles from "./SectionStories.module.css";
 
 import james from "../../../public/james.webp";
@@ -31,7 +30,6 @@ const persons = [
 export const SectionStories = () => {
   return (
     <section className={styles.section}>
-      {/* <Container currentContainer="stories"> */}
       <div className={styles.storiesContainer}>
         <div className={styles.titleWrapp}>
           <h2 className={styles.title}>
@@ -52,7 +50,13 @@ export const SectionStories = () => {
                 </div>
                 <div className={styles.personInfo}>
                   <div className={styles.imgWrapp}>
-                    <Image src={url} alt={`Portrait of ${name}`} fill />
+                    <Image
+                      src={url}
+                      alt={`Portrait of ${name}`}
+                      fill
+                      sizes="(max-width: 767px) 40px, 60px"
+                      quality={100}
+                    />
                   </div>
                   <h3 className={styles.personName}>{name}</h3>
                 </div>
@@ -61,7 +65,6 @@ export const SectionStories = () => {
           })}
         </ul>
       </div>
-      {/* </Container> */}
     </section>
   );
 };
