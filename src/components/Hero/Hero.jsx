@@ -24,7 +24,11 @@ export const Hero = () => {
             Welcome to Good<span className={styles.accent}>lyfe</span> Gyms
           </h1>
           <div className={styles.btnWrapp}>
-            <Btn text="See the benefits" btnStyles="main" />
+            <Btn
+              text="See the benefits"
+              btnStyles="main"
+              name="a button showing contact information"
+            />
           </div>
         </div>
       </Container>

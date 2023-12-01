@@ -53,7 +53,7 @@ export const SectionNewBody = () => {
               gravida nec felis. Sed id egestasegestas risus, ut imperdiet
               augue.
             </p>
-            <Btn text="View the FAQ" />
+            <Btn text="View the FAQ" name="view the FAQ" />
           </div>
         </div>
       </Container>

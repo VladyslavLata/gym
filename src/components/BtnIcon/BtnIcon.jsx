@@ -7,6 +7,7 @@ export const BtnIcon = ({ name, svg: Svg, w = 20, h = 20, onClick }) => {
       className={`${styles.btn} ${
         name === "menu" ? styles.btnMenu : styles.btnClose
       }`}
+      name={name === "menu" ? "open mobile menu" : "close mobile menu"}
       onClick={(e) => {
         onClick();
         e.currentTarget.blur();

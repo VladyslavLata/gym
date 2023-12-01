@@ -20,7 +20,13 @@ export const Social = () => {
         <Title text={"Social"} />
         <ul className={styles.linkList}>
           {socialIcons.map(({ name, link, icon }) => (
-            <LinckBtn href={link} key={name} icon={icon} currentLink={"main"} />
+            <LinckBtn
+              href={link}
+              key={name}
+              icon={icon}
+              currentLink={"main"}
+              name={name}
+            />
           ))}
         </ul>
       </Container>

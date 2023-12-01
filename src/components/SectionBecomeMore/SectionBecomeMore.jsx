@@ -26,7 +26,11 @@ export const SectionBecomeMore = () => {
           Staying active is great fun and keeps you healthy. Check out how you
           can join in.
         </p>
-        <Btn text="Let's do it!" btnStyles="main" />
+        <Btn
+          text="Let's do it!"
+          name="a button showing contact information."
+          btnStyles="main"
+        />
       </Container>
     </section>
   );

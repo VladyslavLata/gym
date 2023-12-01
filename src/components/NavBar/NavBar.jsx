@@ -53,7 +53,7 @@ export const NavBar = () => {
 
   return (
     <>
-      <nav className={styles.navigation}>
+      <nav className={styles.navigation} role="navigation">
         <Link href="/" className={styles.logo}>
           Good<span className={styles.logoAccent}>lyfe</span>
         </Link>

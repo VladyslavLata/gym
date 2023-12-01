@@ -5,7 +5,9 @@ export const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <main style={{ overflow: "hidden" }}>{children}</main>
+      <main style={{ overflow: "hidden" }} role="main">
+        {children}
+      </main>
       <Footer />
     </>
   );

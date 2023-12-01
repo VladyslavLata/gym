@@ -6,7 +6,7 @@ import styles from "./Header.module.css";
 
 export const Header = () => {
   return (
-    <header className={styles.header}>
+    <header className={styles.header} role="banner">
       <Container currentContainer={"headerContainer"}>
         <NavBar />
         {/* <BtnIcon svg={MenuIcon} name="menu" /> */}

@@ -55,7 +55,10 @@ const downloadFiles = [
 ];
 export const Footer = () => {
   return (
-    <footer className={`${manrope.variable} ${styles.footer}`}>
+    <footer
+      className={`${manrope.variable} ${styles.footer}`}
+      role="contentinfo"
+    >
       <Container>
         <div className={styles.mainContentWrapp}>
           <div>
@@ -71,6 +74,7 @@ export const Footer = () => {
               {socials.map(({ name, icon, link }) => (
                 <LinckBtn
                   key={name}
+                  name={name}
                   href={link}
                   icon={icon}
                   currentLink={"second"}

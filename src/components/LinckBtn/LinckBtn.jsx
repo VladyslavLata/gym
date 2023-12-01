@@ -1,6 +1,6 @@
 import styles from "./LinckBtn.module.css";
 
-export const LinckBtn = ({ href, icon: Icon, currentLink }) => {
+export const LinckBtn = ({ href, icon: Icon, name, currentLink }) => {
   return (
     <li className={styles[`${currentLink}LinkWrapp`]}>
       <a
@@ -8,6 +8,7 @@ export const LinckBtn = ({ href, icon: Icon, currentLink }) => {
         className={styles.link}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label={`we are on ${name}`}
         onClick={(e) => e.currentTarget.blur()}
       >
         <div className={styles[`${currentLink}IconWrapp`]}>

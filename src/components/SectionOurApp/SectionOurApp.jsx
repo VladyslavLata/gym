@@ -12,10 +12,10 @@ import styles from "./SectionOurApp.module.css";
 const downloodData = [
   {
     src: googlePlay,
-    name: "Google Play icon",
+    name: "Google Play",
     url: "https://play.google.com/",
   },
-  { src: appStore, name: "App Store icon", url: "https://www.apple.com/" },
+  { src: appStore, name: "App Store", url: "https://www.apple.com/" },
 ];
 
 const appMobileImages = [{ src: phoneImageFirst }, { src: phoneImageSecond }];
@@ -38,8 +38,18 @@ export const SectionOurApp = () => {
           <ul className={styles.dawnLoodList}>
             {downloodData.map(({ name, src, url }) => (
               <li key={name}>
-                <a href={url} target="_blank" rel="noopener noreferrer">
-                  <Image src={src} width={135} height={40} alt={name} />
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Application GoodLife in ${name}`}
+                >
+                  <Image
+                    src={src}
+                    width={135}
+                    height={40}
+                    alt={`${name} icon`}
+                  />
                 </a>
               </li>
             ))}
