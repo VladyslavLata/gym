@@ -41,7 +41,9 @@
     }
 }
 
-.navList {
+.navlist {
+display: block;
+
   @media screen and (min-width: 768px) { 
   display: flex;
   column-gap: 20px;
@@ -49,6 +51,7 @@
 }
 
 .openMobileMenu {   
+
     @media screen and (max-width: 767px) { 
       visibility: visible;
       transform: translateX(0%);

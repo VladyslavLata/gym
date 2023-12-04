@@ -62,7 +62,7 @@ export const NavBar = () => {
             showMobileMenu ? styles.openMobileMenu : ""
           }`}
         >
-          <ul className={styles.navList}>
+          <ul className={styles.navlist}>
             {navData.map(({ title, path }) => (
               <li key={title} className={styles.linkWrapp}>
                 <Link
