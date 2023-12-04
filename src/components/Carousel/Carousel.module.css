@@ -1,3 +1,14 @@
+.sliderWrapp {
+background-color: #474747;
+width: 100%;
+
+  @media screen  and (min-width:1800px){
+    width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .imgWrapp {
   position: relative;
   margin-left: auto;
@@ -13,8 +24,8 @@
     height: 700px;
   }
 
-  @media screen and (min-width: 1600px) {
-    width: 1600px;
+  @media screen and (min-width: 1800px) {
+    width: 1800px;
   }
 }
 

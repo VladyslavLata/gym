@@ -57,15 +57,6 @@ export const SectionPremiumFacilities = () => {
             <Btn text="Learn more" name="read more about premium services" />
           </div>
         </div>
-        {/* <div className={styles.wrapp}>
-          <Title text="Premium Facilities" />
-          <p className={styles.text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            eget lectus urna. Nulla magna tortor, bibendum in molestie sed,
-            gravida nec felis. Sed id egestasegestas risus, ut imperdiet augue.
-          </p>
-          <Btn text="View the FAQ" />
-        </div> */}
       </Container>
     </section>
   );

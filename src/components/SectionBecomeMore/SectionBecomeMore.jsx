@@ -15,6 +15,7 @@ export const SectionBecomeMore = () => {
           src={gymBG}
           fill
           alt="a man doing pull-ups on the horizontal bar"
+          sizes="(max-width: 1799px) 100vw, 1800px"
         />
       </div>
       <Container currentContainer="becomeMoreContainer">
