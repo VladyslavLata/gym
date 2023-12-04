@@ -4,13 +4,13 @@ import { Container } from "../Container/Container";
 import { LinckBtn } from "../LinckBtn/LinckBtn";
 import { LinkAddress } from "../LinkAddress/LInkAddress";
 
-import youtube from "../../../public/youtube.svg";
-import twitter from "../../../public/twitter.svg";
-import dribbble from "../../../public/dribbble.svg";
-import inst from "../../../public/instagram.svg";
-import emailIcon from "../../../public/message.svg";
-import phoneIcon from "../../../public/calling.svg";
-import locationIcon from "../../../public/location.svg";
+import youtube from "/public/youtube.svg";
+import twitter from "/public/twitter.svg";
+import dribbble from "/public/dribbble.svg";
+import inst from "/public/instagram.svg";
+import emailIcon from "/public/message.svg";
+import phoneIcon from "/public/calling.svg";
+import locationIcon from "/public/location.svg";
 
 import { manrope, poppins } from "../../fonts/fonts";
 import styles from "./Footer.module.css";

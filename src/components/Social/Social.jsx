@@ -2,9 +2,9 @@ import { Title } from "../Title/Title";
 import { Container } from "../Container/Container";
 import { LinckBtn } from "../LinckBtn/LinckBtn";
 
-import instIcon from "../../../public/inst.svg";
-import fIcon from "../../../public/f.svg";
-import ytIcon from "../../../public/yt.svg";
+import instIcon from "/public/inst.svg";
+import fIcon from "/public/f.svg";
+import ytIcon from "/public/yt.svg";
 import styles from "./Social.module.css";
 
 const socialIcons = [

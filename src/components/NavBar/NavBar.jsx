@@ -4,8 +4,8 @@ import { useRouter } from "next/router";
 import { useMediaQuery } from "react-responsive";
 
 import { BtnIcon } from "../BtnIcon/BtnIcon";
-import CloseIcon from "../../../public/close.svg";
-import MenuIcon from "../../../public/burgerMenu.svg";
+import CloseIcon from "/public/close.svg";
+import MenuIcon from "/public/burgerMenu.svg";
 import styles from "./NavBar.module.css";
 
 export const NavBar = () => {
