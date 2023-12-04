@@ -1,7 +1,4 @@
 .navigation {
-  /* @media screen and (max-width: 767px) {
-   position: relative;
-    } */
   display: flex;
 }
 
@@ -44,7 +41,14 @@
     }
 }
 
- .openMobileMenu {   
+.navList {
+  @media screen and (min-width: 768px) { 
+  display: flex;
+  column-gap: 20px;
+}
+}
+
+.openMobileMenu {   
     @media screen and (max-width: 767px) { 
       visibility: visible;
       transform: translateX(0%);
@@ -52,12 +56,7 @@
     }
   }
 
-.navList {
-  @media screen and (min-width: 768px) { 
-  display: flex;
-  column-gap: 20px;
-}
-}
+
 
 .linkWrapp {
   @media screen and (max-width: 767px) {
