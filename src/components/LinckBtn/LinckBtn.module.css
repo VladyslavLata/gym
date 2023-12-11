@@ -30,7 +30,10 @@
   transition: border-color 250ms linear;
 }
 
-.secondLinkWrapp:hover,
+.secondLinkWrapp:hover {
+    border-color: #ffffff;
+}
+
 .secondLinkWrapp:focus-within {
   border-color: #ffffff;
 }
@@ -50,9 +53,14 @@
   transition: background-color 250ms linear, color 250ms linear;
 }
 
-.mainLink:focus, .mainLink:hover {
+.mainLink:hover {
   background-color: #e43071;
   color: #ffffff;
+}
+
+.mainLink:focus {
+  background-color: #e43071;
+    color: #ffffff;
 }
 
 .secondLink {
