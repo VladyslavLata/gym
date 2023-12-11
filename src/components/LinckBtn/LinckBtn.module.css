@@ -59,8 +59,11 @@
 }
 
 .mainLink:focus {
-  background-color: #e43071;
+  @media screen and (min-width:768px){
+     background-color: #e43071;
     color: #ffffff;
+  }
+ 
 }
 
 .secondLink {
