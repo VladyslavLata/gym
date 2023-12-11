@@ -4,9 +4,9 @@ import { Container } from "../Container/Container";
 import { LinckBtn } from "../LinckBtn/LinckBtn";
 import { LinkAddress } from "../LinkAddress/LInkAddress";
 
-import youtube from "/public/youtube.svg";
-import twitter from "/public/twitter.svg";
-import dribbble from "/public/dribbble.svg";
+import youtube from "/public/yt2.svg";
+import twitter from "/public/tw.svg";
+import dribbble from "/public/dr.svg";
 import insta from "/public/insta.svg";
 import emailIcon from "/public/message.svg";
 import phoneIcon from "/public/calling.svg";
