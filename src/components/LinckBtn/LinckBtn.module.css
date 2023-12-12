@@ -31,7 +31,7 @@
 }
 
 .secondLinkWrapp:hover {
-    border-color: #ffffff;
+  border-color: #ffffff;
 }
 
 .secondLinkWrapp:focus-within {
@@ -53,25 +53,24 @@
   transition: background-color 250ms linear, color 250ms linear;
 }
 
-.mainLink:hover {
-  @media screen and (min-width:768px) {
+.mainHover{
   background-color: #e43071;
-  color: #ffffff;}
+    color: #ffffff;
 }
+/* .mainLink:hover {
+  background-color: #e43071;
+  color: #ffffff;
+} */
 
 .mainLink:focus {
-  @media screen and (min-width:768px){
-     background-color: #e43071;
-    color: #ffffff;
-  }
- 
+  background-color: #e43071;
+  color: #ffffff;
 }
 
 .secondLink {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
 }
-
 
 .mainIconWrapp {
   width: 20px;
