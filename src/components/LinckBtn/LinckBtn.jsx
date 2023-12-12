@@ -5,13 +5,17 @@ import styles from "./LinckBtn.module.css";
 export const LinckBtn = ({ href, icon: Icon, name, currentLink }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <li className={styles[`${currentLink}LinkWrapp`]}>
+    <li
+      className={`${styles[`${currentLink}LinkWrapp`]} ${
+        isHovered && currentLink !== "main" ? styles.linkWrappHover : ""
+      }`}
+    >
       <a
         href={href}
         // className={styles.link}
         // className={`${styles.link} ${styles[`${currentLink}Link`]}`}
         className={`${styles.link} ${styles[`${currentLink}Link`]} ${
-          isHovered ? styles[`${currentLink}Hover`] : ""
+          isHovered && currentLink === "main" ? styles.mainHover : ""
         }`}
         target="_blank"
         rel="noopener noreferrer"

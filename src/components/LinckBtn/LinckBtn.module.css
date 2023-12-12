@@ -30,7 +30,11 @@
   transition: border-color 250ms linear;
 }
 
-.secondLinkWrapp:hover {
+/* .secondLinkWrapp:hover {
+  border-color: #ffffff;
+} */
+
+.linkWrappHover {
   border-color: #ffffff;
 }
 
